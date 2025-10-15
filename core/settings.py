@@ -74,8 +74,12 @@ WSGI_APPLICATION = 'core.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',  # Informa ao Django para usar o conector MySQL
+        'NAME': 'saae_db',                      # O nome exato do banco de dados que criamos
+        'USER': 'root',                         # O usuário do MySQL (padrão é 'root')
+        'PASSWORD': 'Ray@#$!285',       # ATENÇÃO: COLOQUE A SENHA QUE VOCÊ CRIOU!
+        'HOST': 'localhost',                    # Onde o banco de dados está rodando (na sua máquina)
+        'PORT': '3306',                         # A porta padrão do MySQL
     }
 }
 
