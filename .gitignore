@@ -1,0 +1,28 @@
+# Arquivos do Python
+*.pyc
+__pycache__/
+*.egg-info/
+
+# Ambiente Virtual
+venv/
+env/
+
+# Arquivos de IDE e Sistema Operacional
+.vscode/
+.idea/
+.DS_Store
+
+# Arquivos de dependências
+pip-freeze.txt
+requirements.txt
+
+# Arquivos de banco de dados local (se usasse sqlite)
+*.sqlite3
+db.sqlite3
+
+# Arquivos de mídia e estáticos (geralmente gerenciados separadamente)
+/media/
+/static_root/
+
+# Arquivos de log
+*.log
